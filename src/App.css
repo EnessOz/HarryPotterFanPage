@@ -1,38 +1,807 @@
-.App {
-  text-align: center;
+.App img {
+  width: 175px;
+  height: 200px;
+  object-fit: cover;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.socialMediaBlock {
+
+  width: 100%;
+  height: 400px;
+  background-color: blue;
+  color: wheat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.socialLogos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.partTwo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.socialLogos h2 {
+  cursor: pointer;
+}
+
+.homePageContainer {
+  background-color: rgb(17, 17, 17);
+}
+
+.newsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-style: ridge;
+  color: wheat;
+  margin-top: 2%;
+  background-color: rgb(17, 17, 17);
+
+}
+
+.info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: auto;
+  border-style: groove;
+  width: 175px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header img {
+  width: 10%;
+  height: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
+.dropbtn {
+
+  color: white;
+  cursor: pointer;
+
+}
+
+.navLinks .dropBest {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navLinks .dropHome {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a19f9fe0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  color: #a09d9d;
+}
+
+.dropContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 0.5%;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-h {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+  opacity: 1;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
   from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.overlay-text h1 {
+  display: flex;
+  margin-left: 90%;
+  font-size: 40px;
+  margin-bottom: 10px;
+  animation: fadeInAndOut 1.5s linear 2s;
+  opacity: 0;
+  color: rgb(0, 0, 0);
+
+
+
+}
+
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.3;
+  }
+
+  20% {
+    opacity: 1;
+    transform: rotate(-60deg);
+
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.5;
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    opacity: 0;
   }
+}
+
+
+
+.overlay-text h2 {
+  margin-bottom: 8px;
+  margin: -5%;
+  color: rgba(245, 222, 179, 0.692);
+}
+
+.overlay-text h6 {
+  font-size: 20px;
+  margin: 5px;
+  color: wheat;
+}
+
+
+
+.backgroundImage {
+  width: 250px;
+  height: 300px;
+  background-image: url('https://cdn1.epicgames.com/offer/e97659b501af4e3981d5430dad170911/EGS_HogwartsLegacy_AvalancheSoftware_S1_2560x1440-2baf3188eb3c1aa248bcc1af6a927b7e');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundImageUpdate {
+  width: 250px;
+  height: 300px;
+  background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2020/06/harry-potter-details-30-5ede2abfdbb5e__700.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundImageMovie {
+  width: 250px;
+  height: 300px;
+  background-image: url('https://i.pinimg.com/550x/6c/90/d3/6c90d364b8f79dc7d8e111566c281ed8.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.backgroundImageMovieSystem {
+  width: 250px;
+  height: 300px;
+  background-image: url('https://www.signa.com/cdn/shop/articles/c898ad1f917b33d41cd8adf31cfc5993_1400x.jpg?v=1643656579');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundImageMovieDumble {
+  width: 250px;
+  height: 300px;
+  background-image: url('https://fantastikcanavarlar.com/wp-content/uploads/2016/06/Michael-Gambon-dumbledore.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundImageMovieTravel {
+  margin: 2%;
+  width: 550px;
+  height: 500px;
+  background-image: url('https://www.silverscreen.tours/wp-content/uploads/2020/09/alnwick-castle-hogwarts-broomsticks-stephen-bridger-02.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.photoInBlockContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.photo1 {
+
+  width: 400px;
+  height: 300px;
+  background-image: url('https://www.roadaffair.com/wp-content/uploads/2017/12/wizarding-world-of-harry-potter-shutterstock_757514953.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo2 {
+  width: 400px;
+  height: 300px;
+  background-image: url('https://thirdeyetraveller.com/wp-content/uploads/Dark-Arts-Harry-Potter-Studios-Halloween-Tour-Review.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo3 {
+  width: 400px;
+  height: 300px;
+  background-image: url('https://cdn.getyourguide.com/img/tour/54b7e542042c8.jpeg/98.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo4 {
+  width: 400px;
+  height: 300px;
+  background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/07/72/f2/77.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo5 {
+  width: 400px;
+  height: 300px;
+  background-image: url('https://cdn.londonandpartners.com/asset/warner-bros-studio-tour-london-the-making-of-harry-potter_image-courtesy-of-warner-bros-studio-tour-london-the-making-of-harry-potter_de58e367eabca3f26976d289d3ca11f6.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo6 {
+  width: 400px;
+  height: 300px;
+  background-image: url('https://www.goldentours.com/siteimg/products/124569.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover,
+.photo5:hover,
+.photo6:hover {
+  opacity: 1;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  background-color: rgb(17, 17, 17);
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+}
+
+.newsContainer h4 {
+  color: wheat;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.newsContainer .textDetail {
+  background-color: rgba(245, 222, 179, 0.76);
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.newsContainer button {
+  margin-top: 10px;
+  background-color: wheat;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.newsContainer button:hover {
+  background-color: rgb(129, 118, 96);
+}
+
+.travelContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10%;
+  color: black;
+  gap: 100px;
+  background-color: white;
+}
+
+.travelContainer .visitBtn {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 800;
+
+}
+
+.travelContainer .visitBtn:hover {
+  color: rgb(112, 112, 112);
+}
+
+.travelContainer h3 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.9%;
+  color: white;
+  gap: 20px;
+}
+
+.navLinks .dropBest:hover {
+  color: rgb(104, 103, 103);
+}
+
+.navLinks .dropHome:hover {
+  color: rgb(87, 87, 87);
+}
+
+.navLinks .dropBest {
+  color: white;
+  text-decoration: dotted;
+  font-size: 17px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navLinks .dropHome {
+  color: white;
+  font-size: bold;
+  font-weight: 800;
+  font-size: 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.classGender {
+  text-transform: capitalize;
+}
+
+.classWand {
+  text-transform: capitalize;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 500px;
+  margin-top: -5%;
+
+}
+
+.footerContainer .aboutPart,
+.servicePart,
+.contactUsPart,
+.socialMediaPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: wheat;
+
+}
+
+.footerContainer button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: wheat;
+  font-style: italic;
+}
+
+.footerContainer button:hover {
+  color: rgb(148, 139, 123);
+}
+
+.iconContainer {
+  position: relative;
+  width: 100px;
+  animation: slideAnimation 5s linear infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: calc(75% + 100px);
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+}
+
+.broomIcon {
+  color: rgb(2, 2, 2);
+  font-size: 36px;
+}
+
+.wizardInformations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wizardInformations h5 {
+  text-transform: capitalize;
+
+}
+
+.wizardInformations img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.housesInformations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.genderInformations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wandInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.detailContainer .userIdTitle {
+  text-transform: capitalize;
+}
+
+.flip-card {
+  margin-left: 45%;
+  margin-top: 5%;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+
+}
+
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.flipCardGitHub {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.flipCardGitHub:hover {
+  color: wheat;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.titleMainTitle {
+  position: relative;
+  animation: fadeIn2 4s linear;
+  animation-fill-mode: forwards;
+  color: wheat;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes fadeIn2 {
+  0% {
+
+    opacity: 0;
+  }
+
+  50% {
+
+    opacity: 0;
+
+
+  }
+
+  100% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.842);
+
+  }
+}
+
+.leftBroom {
+  transform: rotate(45deg);
+  font-size: 50px;
+  animation-name: slideLeft;
+
+}
+
+.rightBroom {
+  transform: rotate(225deg);
+  font-size: 50px;
+  animation-name: slideRight;
+
+}
+
+.leftBroom,
+.rightBroom {
+  margin-bottom: 23%;
+  position: absolute;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  color: rgb(151, 137, 110);
+}
+
+@keyframes slideLeft {
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+
+  50% {
+    left: 50%;
+    opacity: 0, 1;
+  }
+
+  0% {
+    left: 0;
+
+  }
+}
+
+@keyframes slideRight {
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+
+  50% {
+    right: 50%;
+    opacity: 0, 1;
+  }
+
+  0% {
+    right: 0;
+
+  }
+}
+
+.visitContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 2px;
+}
+
+.gif1,
+.gif2,
+.gif3,
+.gif4,
+.gif5,
+.gif6 {
+  width: 400px;
+  height: 230px;
+  background-size: fill;
+}
+
+.gif1 {
+
+  background-image: url('https://media.tenor.com/YIp9qJVe3NsAAAAC/hogwarts-harry-potter.gif');
+}
+
+.gif2 {
+  background-image: url("https://media.tenor.com/j_n8IoCVGjoAAAAC/harry-potter-castle.gif");
+}
+
+.gif3 {
+  background-image: url("https://media.tenor.com/2JZwahWsEGYAAAAd/moving-stairs.gif");
+}
+
+.gif4 {
+  background-image: url("https://i.pinimg.com/originals/c2/bc/e7/c2bce753ba5ef0286c01fcea2defd49c.gif");
+}
+
+.gif5 {
+  background-image: url("https://media.tenor.com/nTowZRm2PDAAAAAd/moving-stairs.gif");
+}
+
+.gif6 {
+  background-image: url("https://64.media.tumblr.com/2c5fe37a2e95b297aab4c3f8201bdae8/tumblr_pmb0xsCKSb1u4wzo8o3_540.gif");
+}
+
+.visitTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  margin-top: 4%;
+  color: wheat;
 }
