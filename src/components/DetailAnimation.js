@@ -7,7 +7,7 @@ export const DetailAnimation = () => {
         <div>
             <div className='leftBroom'><FaBroom /></div>
             <div className='rightBroom'><FaBroom /></div>
-            <h3 className='titleMainTitle'>WİZARDS <FaHatWizard />  DETAİLS</h3>
+            <h3 className='titleMainTitle'>WIZARDS <FaHatWizard />  DETAILS</h3>
 
         </div>
     )
